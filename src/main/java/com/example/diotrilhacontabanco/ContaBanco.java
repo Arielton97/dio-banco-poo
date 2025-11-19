@@ -8,15 +8,15 @@ import java.beans.ConstructorProperties;
 public class ContaBanco {
 
     @Getter
-    int conta;
+    private int conta;
 
     @Getter
     @Setter
-    double saldo;
+    private double saldo;
 
     @Getter
     @Setter
-    String titular;
+    private String titular;
 
     @ConstructorProperties( { "conta", "saldo", "titular" } )
     public ContaBanco() {}
